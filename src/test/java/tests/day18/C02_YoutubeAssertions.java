@@ -1,4 +1,4 @@
-package day18;
+package tests.day18;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
