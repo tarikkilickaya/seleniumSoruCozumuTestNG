@@ -1,10 +1,14 @@
 package utilities;
 
+import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Driver {
 
@@ -20,6 +24,12 @@ public class Driver {
         }
         return driver;
     }
+
+    public static Actions actions = new Actions(Driver.getDriver());
+    public static Faker faker = new Faker();
+    public static LocalDateTime date = LocalDateTime.now();
+    public static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYMMddHHmmss");
+    public static String tarih = date.format(formatter);
 
     public static void closeDriver() {
         if (driver != null) {
