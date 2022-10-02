@@ -10,6 +10,62 @@ public class AutomationExercisePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(xpath = "//html")
+    public WebElement automationExerciseAnaSayfa;
+
+
+    @FindBy(xpath = "//*[@class='fa fa-lock']")
+    public WebElement kayitOlGirisYap;
+
+    @FindBy(xpath = "//*[@data-qa='signup-name']")
+    public WebElement kayitOlName;
+
+
+    @FindBy(xpath = "//*[@data-qa='signup-email']")
+    public WebElement kayitOlEmail;
+
+
+    @FindBy(xpath = "//*[@id='id_gender1']")
+    public WebElement cinsiyetMr;
+
+
+    @FindBy(xpath = "//*[@id='id_gender2']")
+    public WebElement cinsiyetMrs;
+
+
+    @FindBy(xpath = "//*[text()='Account Created!']")
+    public WebElement hesapOlusturuldu;
+
+
+    @FindBy(xpath = "//*[@data-qa='continue-button']")
+    public WebElement continueButton;
+
+    @FindBy(xpath = "//*[@class='fa fa-user']")
+    public WebElement oturumAcildi;
+
+
+    @FindBy(xpath = "(//*[@class='fa fa-shopping-cart'])[4]")
+    public WebElement erkekTshirtSepeteEkle;
+
+    @FindBy(xpath = "//*[text()='Shopping Cart']")
+    public WebElement sepetSayfasi;
+
+    @FindBy(xpath = "//*[@class='btn btn-default check_out']")
+    public WebElement odemeyeDevamEt;
+
+
+    @FindBy(xpath = "//*[@id='address_delivery']")
+    public WebElement teslimatAdresi;
+
+
+    @FindBy(xpath = "//*[@id='address_invoice']")
+    public WebElement faturaAdresi;
+
+
+    @FindBy(xpath = "//*[@class='fa fa-trash-o']")
+    public WebElement hesabiSil;
+
+
     @FindBy(xpath = "//*[text()='recommended items']")
     public WebElement onerilenUrunler;
 
