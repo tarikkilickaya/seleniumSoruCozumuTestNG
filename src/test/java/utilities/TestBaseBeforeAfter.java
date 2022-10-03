@@ -40,6 +40,6 @@ public class TestBaseBeforeAfter {
 
     @AfterMethod
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 }

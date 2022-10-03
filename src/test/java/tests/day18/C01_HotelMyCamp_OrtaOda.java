@@ -21,7 +21,7 @@ public class C01_HotelMyCamp_OrtaOda extends TestBaseBeforeClassAfterClass {
         WebElement ortaOda = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[text()='View Room Details '])[2]")));
         ortaOda.click();
         //istediginiz oda inceleme sayfasi acildigini test  edin
-        String expectedUrl = "https://www.hotelmycamp.com/RoomDetail/425";
+        String expectedUrl = "https://www.hotelmycamp.com/RoomDetail/488";
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl, actualUrl);
 

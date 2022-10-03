@@ -8,9 +8,7 @@ import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-import java.security.Key;
-
-public class C01 {
+public class C01_VerifyAddressDetailsInCheckoutPage {
 
     AutomationExercisePage automationExerciseObje = new AutomationExercisePage();
 
@@ -27,7 +25,7 @@ public class C01 {
         automationExerciseObje.kayitOlGirisYap.click();
         //5. Kaydolma bölümündeki tüm ayrıntıları doldurun ve hesap oluşturun
         automationExerciseObje.kayitOlName.sendKeys("Tarık");
-        automationExerciseObje.kayitOlEmail.sendKeys("tarikkkssskggfddddfkkk@gmail.com", Keys.ENTER);
+        automationExerciseObje.kayitOlEmail.sendKeys("tarikkksssllkggfddddfkzxxxxkk@gmail.com", Keys.ENTER);
         automationExerciseObje.cinsiyetMr.click();
         actions.sendKeys(Keys.TAB, Keys.TAB, "12345").sendKeys(Keys.TAB, "25").sendKeys(Keys.TAB, "April").sendKeys(Keys.TAB, "2000").
                 sendKeys(Keys.TAB, Keys.SPACE).sendKeys(Keys.TAB, Keys.SPACE).sendKeys(Keys.TAB, "Tarık").sendKeys(Keys.TAB, "KILIÇKAYA").

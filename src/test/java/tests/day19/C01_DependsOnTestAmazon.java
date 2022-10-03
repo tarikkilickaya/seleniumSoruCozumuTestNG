@@ -4,12 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AmazonPages;
+import pages.AmazonPage;
 import utilities.Driver;
 
 public class C01_DependsOnTestAmazon {
 
-    AmazonPages amazonPageObje = new AmazonPages();
+    AmazonPage amazonPageObje = new AmazonPage();
 
     @Test
     public void test01() {

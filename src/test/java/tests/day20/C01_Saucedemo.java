@@ -13,11 +13,11 @@ public class C01_Saucedemo {
         Driver.getDriver().get("https://www.saucedemo.com/");
         // Enter the username  as standard_user
         SauceDemoPage sauceDemoPage = new SauceDemoPage();
-        sauceDemoPage.userName.sendKeys("standard_user");
+        sauceDemoPage.usernameKutusu.sendKeys("standard_user");
         // Enter the password as secret_sauce
-        sauceDemoPage.password.sendKeys("secret_sauce");
+        sauceDemoPage.passwordKutusu.sendKeys("secret_sauce");
         // Click on login button
-        sauceDemoPage.loginButton.click();
+        sauceDemoPage.login.click();
         // Choose price low to high
         Select select = new Select(sauceDemoPage.dropDownMenu);
         select.selectByValue("lohi");

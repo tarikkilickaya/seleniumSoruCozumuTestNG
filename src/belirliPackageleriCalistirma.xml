@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirli packageleri calistir">
+    <test name="istenen packageleri calistir">
+        <packages>
+            <package name="tests.day19">
+            </package>
+        </packages>
+    </test>
+</suite>
