@@ -77,4 +77,30 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//*[@class='cart_description']")
     public WebElement sepettekiUrun;
+
+    @FindBy(xpath = "//*[text()='Register / Login']")
+    public WebElement registerLogin;
+
+    @FindBy(xpath = "(//*[@href='/view_cart'])[1]")
+    public WebElement sepetButonu;
+
+    @FindBy(xpath = "//*[@class='form-control']")
+    public WebElement yorumMetniAlani;
+
+    @FindBy(xpath = "//*[@data-qa='name-on-card']")
+    public WebElement kartUzerindekiIsim;
+
+    @FindBy(xpath = "//*[@data-qa='pay-button']")
+    public WebElement odeVeSiparisiOnayla;
+
+    @FindBy(xpath = "//*[text()='Congratulations! Your order has been confirmed!']")
+    public WebElement siparisMesaji;
+
+
+    @FindBy(xpath = "//*[text()='Download Invoice']")
+    public WebElement faturayiIndir;
+
+
+
+
 }
