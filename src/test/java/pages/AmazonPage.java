@@ -1,9 +1,13 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.ConfigReader;
 import utilities.Driver;
+
+import java.util.List;
 
 public class AmazonPage {
     public AmazonPage() {
@@ -24,4 +28,15 @@ public class AmazonPage {
 
     @FindBy(xpath = "//*[@title='See All Buying Options']")
     public WebElement seeAllBuyingOptions;
+
+    @FindBy(xpath = "//table//tr")
+    public List<WebElement> satirlar;
+
+    @FindBy(xpath = "//table//td")
+    public List<WebElement> sutunlar;
+
+    public void enAltaIn() {
+        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+        Driver.actions.sendKeys(Keys.END).perform();
+    }
 }
