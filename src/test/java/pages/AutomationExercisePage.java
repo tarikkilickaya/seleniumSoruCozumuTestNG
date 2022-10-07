@@ -13,13 +13,50 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//html")
     public WebElement automationExerciseAnaSayfa;
 
+    @FindBy(xpath = "//*[@class='fa fa-home']")
+    public WebElement anaSayfaButonu;
+
+    @FindBy(xpath = "//*[@class='material-icons card_travel']")
+    public WebElement urunlerButonu;
+
+    @FindBy(xpath = "//*[@class='title text-center']")
+    public WebElement tumUrunler;
+
+    @FindBy(xpath = "//*[@class='col-sm-9 padding-right']")
+    public WebElement urunListesi;
+
+    @FindBy(xpath = "(//*[@class='fa fa-list'])[1]")
+    public WebElement testCaseButonu;
+
+    @FindBy(xpath = "(//*[text()='View Product'])[1]")
+    public WebElement urunuGoruntule;
+
+    @FindBy(xpath = "(//h2)[3]")
+    public WebElement urunAdi;
+
+    @FindBy(xpath = "(//p)[3]")
+    public WebElement urunKategorisi;
+
+    @FindBy(xpath = "(//span)[13]")
+    public WebElement fiyat;
+
+    @FindBy(xpath = "(//p)[4]")
+    public WebElement bulunabilirlik;
+
+    @FindBy(xpath = "(//p)[5]")
+    public WebElement durum;
+
+    @FindBy(xpath = "(//p)[6]")
+    public WebElement marka;
+
+    @FindBy(xpath = "//*[@class='product-information']")
+    public WebElement urunSayfasi;
 
     @FindBy(xpath = "//*[@class='fa fa-lock']")
     public WebElement kayitOlGirisYap;
 
     @FindBy(xpath = "//*[@data-qa='signup-name']")
     public WebElement kayitOlName;
-
 
     @FindBy(xpath = "//*[@data-qa='signup-email']")
     public WebElement kayitOlEmail;
@@ -96,11 +133,7 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//*[text()='Congratulations! Your order has been confirmed!']")
     public WebElement siparisMesaji;
 
-
     @FindBy(xpath = "//*[text()='Download Invoice']")
     public WebElement faturayiIndir;
-
-
-
 
 }
