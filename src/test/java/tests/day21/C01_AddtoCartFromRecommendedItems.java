@@ -9,7 +9,7 @@ import utilities.Driver;
 
 public class C01_AddtoCartFromRecommendedItems {
     @Test
-    public void test01() {
+    public void test01() throws InterruptedException {
 
         //2. 'http://automationexercise.com' url'sine gidin
         Driver.getDriver().get(ConfigReader.getProperty("automationExerciseUrl"));
@@ -19,6 +19,7 @@ public class C01_AddtoCartFromRecommendedItems {
         AutomationExercisePage automationExerciseObje = new AutomationExercisePage();
         Assert.assertTrue(automationExerciseObje.onerilenUrunler.isDisplayed());
         //5. Önerilen üründe 'Sepete Ekle'ye tıklayın
+        Thread.sleep(3000);
         automationExerciseObje.onerilenUrunlerdeSepeteEkle.click();
         //6. 'Sepeti Görüntüle' düğmesine tıklayın
         automationExerciseObje.sepetiGoruntule.click();
